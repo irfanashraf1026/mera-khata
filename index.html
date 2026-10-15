@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0D5C4A">
+<title>Mera Khata</title>
+<link rel="manifest" href="manifest.json">
+<style>
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+  background: #0D5C4A;
+}
+iframe {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+</style>
+</head>
+<body>
+<iframe
+  src="https://script.google.com/macros/s/AKfycbwXUMxTeB1s8aUTdM8Pdag6LFy7PGBq_ER5leZ08kM_73ScrtF4bhPH510rvFycSkb0OA/exec"
+  allow="camera; microphone; web-share; clipboard-write; geolocation *">
+</iframe>
+
+<script>
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('sw.js');
+}
+</script>
+</body>
+</html>
